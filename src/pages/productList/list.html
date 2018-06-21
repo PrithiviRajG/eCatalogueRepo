@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Products</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <!--<button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item.icon" item-start></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-end>
+        {{item.note}}
+      </div>
+    </button>-->
+
+    <ion-item  *ngFor="let product of products" (click)="itemTapped($event, product)">
+      <ion-thumbnail item-start>
+        <img [src]="product.icon">
+      </ion-thumbnail>
+      <h3>{{product.title}}</h3>
+      <button ion-button clear item-end>view</button>
+    </ion-item>
+
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{vehicleName}}</b>
+  </div>
+</ion-content>
