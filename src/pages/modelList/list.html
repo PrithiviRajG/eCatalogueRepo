@@ -3,18 +3,19 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Manufacturer</ion-title>
+    <ion-title>Models</ion-title>
   </ion-navbar>
 
   <ion-toolbar >
-      <ion-title>{{vehicleName}} > {{productName}}</ion-title>
+      <ion-title>{{vehicleName}} > {{productName}} > {{manufacturerName}}</ion-title>
     </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   <ion-list>
-    <ion-item (click)="itemTapped($event, item)" *ngFor="let item of manufacturerTitles">
+    <ion-item (click)="itemTapped($event, item)" *ngFor="let item of modelTitles">
       {{ item }}
     </ion-item>
   </ion-list>

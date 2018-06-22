@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Product Details</ion-title>
+  </ion-navbar>
+  <ion-toolbar >
+      {{vehicleName}} > {{productName}} > {{manufacturerName}} > {{modelName}}
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+<ion-card>
+  <ion-card-header>
+    <div><h3>Application</h3></div>
+    <div><h1>Variable Speed</h1></div>
+  </ion-card-header>
+  <ion-card-content>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <div><h3>JKF Part No</h3></div>
+          <div><h2>VS735EPDM (A)</h2></div>
+        </ion-col>
+        <ion-col col-6>
+            <div><h3>Reference Part No</h3></div>
+            <div><h2>23100-AAL-5000</h2></div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col-6>
+            <div><h3>Belt Type</h3></div>
+            <div><h2>Cogged</h2></div>
+          </ion-col>
+          <ion-col col-6>
+              <div><h3>MRP</h3></div>
+              <div><h2>Rs. 340</h2></div>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+</ion-content>

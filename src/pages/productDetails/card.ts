@@ -4,11 +4,13 @@ import { Vehicle } from '../transferObject/vehicle';
 import { ModelListPage } from '../modelList/list';
 @Component({
   selector: 'page-list',
-  templateUrl: 'list.html'
+  templateUrl: 'card.html'
 })
-export class ManufacturerListPage {
+export class ProductDetailsCard {
   vehicleName: any;
   productName: any;
+  manufacturerName : any;
+  modelName : any;
   icons: string[];
   products: Array<{title: string, icon: string}>;
   vehicle : Vehicle = new Vehicle();
@@ -19,6 +21,10 @@ export class ManufacturerListPage {
     // If we navigated to this page, we will have an item available as a nav param
     this.vehicleName = navParams.get('vehicle');
     this.productName = navParams.get('product');
+    this.manufacturerName = navParams.get('manufacturer');
+    this.modelName = navParams.get('model');
+    console.log(this.manufacturerName);
+    console.log(this.modelName);
     this.vehicle.vehicleName = this.vehicleName;
     this.vehicle.product.productName = this.productName;
     this.initializeItems();
