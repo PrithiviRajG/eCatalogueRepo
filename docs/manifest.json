@@ -4,9 +4,9 @@
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
-    "src": "assets/imgs/logo_ucal_fuel.jpg",
+    "src": "../assets/imgs/logo_ucal_fuel.jpg",
     "sizes": "512x512",
-    "type": "image/png"
+    "type": "image/jpg"
   }],
   "background_color": "#32db64",
   "theme_color": "#488aff"
