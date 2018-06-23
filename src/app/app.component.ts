@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { ContactPage } from '../pages/contact/contact';
 import { AboutPage } from '../pages/about/about';
+import { timer } from 'rxjs/observable/timer';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,6 +16,8 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = ListPage;
+  showSplash = true; // <-- show animation
+
 
   pages: Array<{title: string, component: any}>;
 
@@ -36,6 +39,7 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      timer(3000).subscribe(() => this.showSplash = false) // <-- hide animation after 3s
     });
   }
 
