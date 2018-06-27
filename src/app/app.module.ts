@@ -9,6 +9,8 @@ import { ProductListPage } from '../pages/productList/list';
 import { ManufacturerListPage } from '../pages/manufacturerList/list';
 import { ModelListPage } from '../pages/modelList/list';
 import { ProductDetailsCard } from '../pages/productDetails/card';
+import { ContactPage } from '../pages/contact/contact';
+import { AboutPage } from '../pages/about/about';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,11 +23,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProductListPage,
     ManufacturerListPage,
     ModelListPage,
-    ProductDetailsCard
+    ProductDetailsCard,
+    ContactPage,
+    AboutPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -35,7 +39,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProductListPage,
     ManufacturerListPage,
     ModelListPage,
-    ProductDetailsCard
+    ProductDetailsCard,
+    ContactPage,
+    AboutPage
   ],
   providers: [
     StatusBar,
