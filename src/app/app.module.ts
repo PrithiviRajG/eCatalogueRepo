@@ -11,6 +11,8 @@ import { ModelListPage } from '../pages/modelList/list';
 import { ProductDetailsCard } from '../pages/productDetails/card';
 import { ContactPage } from '../pages/contact/contact';
 import { AboutPage } from '../pages/about/about';
+import { EnquiryPage } from '../pages/enquiry/enquiry';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -25,7 +27,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ModelListPage,
     ProductDetailsCard,
     ContactPage,
-    AboutPage
+    AboutPage,
+    EnquiryPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ModelListPage,
     ProductDetailsCard,
     ContactPage,
-    AboutPage
+    AboutPage,
+    EnquiryPage
   ],
   providers: [
     StatusBar,

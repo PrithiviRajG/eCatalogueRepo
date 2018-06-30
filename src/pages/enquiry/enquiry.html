@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Enquiry</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="logForm()">
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input type="text" [(ngModel)]="enquiry.name" name="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="text" [(ngModel)]="enquiry.email" name="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Phone Number</ion-label>
+      <ion-input type="text" [(ngModel)]="enquiry.phone" name="phone"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Description</ion-label>
+      <ion-textarea [(ngModel)]="enquiry.description" name="description"></ion-textarea>
+    </ion-item>
+
+    <button ion-button type="submit" block>Send Enquiry</button>
+  </form>
+
+</ion-content>

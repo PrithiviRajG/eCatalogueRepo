@@ -16,11 +16,11 @@ export class ListPage {
     this.selectedItem = navParams.get('item');
 
     // Let's populate this page with some filler content for funzies
-    this.icons = ['bike.svg','auto.svg','car.svg','heavy.svg','light.svg','tractor.svg','search.svg'];
+    this.icons = ['bike.svg','auto.svg','car.svg','light.svg'];
 
-    this.vehicleTitles=['2 WHEELER', '3 WHEELER', 'CAR', 'Heavy Commercial Vehicle', 'Light Commercial Vehicle', 'TRACTORS', 'Others']
+    this.vehicleTitles=['2 WHEELER', '3 WHEELER', 'CAR', 'Commercial']
     this.vehicles = [];
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 4; i++) {
       this.vehicles.push({
         title: this.vehicleTitles[i],
         icon: 'assets/imgs/'+this.icons[i]

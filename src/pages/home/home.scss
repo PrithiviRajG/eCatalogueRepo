@@ -1,4 +1,6 @@
 page-home {
+    background: #C5CAE9;
+
     --yellow : yellow;
     .container {
         //width: 100vw;
@@ -6,23 +8,35 @@ page-home {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        //grid-gap: 20px;
-        border: 10px solid var(--yellow)
+        grid-gap: 20px;
+        //border: 10px solid var(--yellow)
 
     }
+
+    
     .item-1 {
-        background-color: blue;
+            align-self: center;
+            justify-self: center;
+          
     }
 
     .item-2 {
-        background-color: green;
+        align-self: center;
+            justify-self: center;
     }
 
     .item-3 {
-        background-color: yellowgreen;
+        align-self: center;
+        justify-self: center;
     }
 
     .item-4 {
-        background-color: blueviolet;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .text-content {
+        text-align: center;
+        font-size: 1.5em;
     }
 }

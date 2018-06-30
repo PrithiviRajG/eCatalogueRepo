@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { ContactPage } from '../pages/contact/contact';
 import { AboutPage } from '../pages/about/about';
+import { EnquiryPage } from '../pages/enquiry/enquiry';
 import { timer } from 'rxjs/observable/timer';
 
 @Component({
@@ -15,7 +16,7 @@ import { timer } from 'rxjs/observable/timer';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = ListPage;
+  rootPage: any = HomePage;
   showSplash = true; // <-- show animation
 
 
@@ -28,7 +29,9 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: ListPage },
       { title: 'Contact', component: ContactPage },
-      { title: 'About', component: AboutPage }
+      { title: 'About', component: AboutPage },
+      { title: 'Enquiry', component: EnquiryPage },
+      
     ];
 
   }
