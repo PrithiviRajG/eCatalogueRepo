@@ -17,6 +17,19 @@ import { EnquiryPage } from '../pages/enquiry/enquiry';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import * as firebase from 'firebase';
+
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyAY4_9moLsRouKzMyZBDkb--5i8N71h96U",
+    authDomain: "ucalproject.firebaseapp.com",
+    databaseURL: "https://ucalproject.firebaseio.com",
+    projectId: "ucalproject",
+    storageBucket: "ucalproject.appspot.com",
+    messagingSenderId: "204990184677"
+};
+firebase.initializeApp(firebaseConfig);
+
 @NgModule({
   declarations: [
     MyApp,

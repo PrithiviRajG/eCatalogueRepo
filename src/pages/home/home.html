@@ -1,32 +1,20 @@
 <ion-header>
-  <ion-navbar  color="primary">
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>
+      Login
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="backgroundClr">
-    <div class="container">
-        <div class="item item-1">
-          <img src="assets/imgs/bike.svg">
-          <p class="text-content">Two Wheeler</p>
-        </div>
-        <div class="item item-2">
-          
-          <img src="assets/imgs/auto.svg">
-          <p class="text-content">Three Wheeler</p>
-        </div>
-        <div class="item item-3">
-            <img src="assets/imgs/car.svg">
-            <p class="text-content">Four Wheeler</p>
-        </div>
-        <div class="item item-4">
-          <img src="assets/imgs/light.svg">
-          <p class="text-content">Commercial</p>
-        </div>
-         
-      </div>
+<ion-content padding>
+  <div id="recaptcha-container"></div>
 
+  <ion-item>
+    <ion-label stacked>Phone Number</ion-label>
+    <ion-input type="number" [(ngModel)]="phoneNumber"></ion-input>
+  </ion-item>
+
+  <button ion-button id="sign-in-button" (click)="signIn(phoneNumber)">
+    Sign In
+  </button>
 </ion-content>
